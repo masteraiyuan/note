@@ -1,6 +1,25 @@
 [TOC]
 
 ## linux常用命令
+
+### 查找
+
+1. 递归查找（find 命令 是递归遍历文件夹的）
+
+	> 命令：find . -name “*.txt”
+
+	> //当前路径下递归查找以.txt结尾的文件夹
+
+2. 不递归查找
+
+	> find . -name “*.txt” -maxdepth 1
+	
+3. 内容查找
+
+	> grep -r magic /usr/src　　
+	
+	> //显示/usr/src目录下的文件(包含子目录)包含magic的行
+	
 ### 端口和进程
 
 1. 根据进程pid查端口
